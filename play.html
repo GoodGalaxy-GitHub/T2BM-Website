@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="/css/play.css">
+    <title>T2BM</title>
+</head>
+
+<noscript>Unfortuantely, Javascript is not enabled. Please check you adblock or browser settings to enable scripts so that we can render the page. Thank you :)</noscript>
+
+<body>
+    <nav></nav>
+    <div class="server-add">
+        <h3>Already got everything setup? Join the server here: <input onclick="navigator.clipboard.writeText('play.goodgalaxy.net'); document.getElementById('server-add-alert').innerText = 'Copied!'" type="text" readonly="true" placeholder="play.goodgalaxy.net">
+            <p id="server-add-alert"></p>
+        </h3>
+    </div>
+    <div class="main-cont">
+        <div class="main-header">
+            <h1>Getting Connected<span class="material-symbols-outlined">
+                dns
+                </span></h1>
+            <p>Getting connected to T2BM is easy! You can use one of two methods to download and install the Better Minecraft pack to your game. While GDLauncher is the recommened method, you may also manually install the mod pack if you choose to. Keep
+                in mind, however, that you will not receive automatic updates and you wil need to manually install any new versions of Better Minecraft that come out.</p>
+
+        </div>
+        <div class="main-toc">
+            <h3><u>Contents</u></h3>
+            <p><a onclick="document.getElementById('gdlaunch').scrollIntoView({block: 'center' });" href="javascript:void(0)">GDLauncher Method</a></p>
+            <ul>
+                <li><a onclick="document.getElementById('inst-gdl').scrollIntoView({block: 'center' });" href="javascript:void(0)">Installing GDLauncher</a></li>
+                <li><a onclick="document.getElementById('inst-gdl-bm').scrollIntoView({block: 'center' });" href="javascript:void(0)">Installing Better Minecraft</a></li>
+            </ul>
+            <p><a onclick="document.getElementById('manmeth').scrollIntoView({block: 'center' });" href="javascript:void(0)">Manual Method</a></p>
+            <ul>
+                <li><a onclick="document.getElementById('inst-fabric').scrollIntoView({block: 'center'})" href="javascript:void(0)">Installing Fabric</a></li>
+                <li><a onclick="document.getElementById('create-prof').scrollIntoView({block: 'center'})" href="javascript:void(0)">Creating the profile</a></li>
+                <li><a onclick="document.getElementById('inst-bm-man').scrollIntoView({block: 'center'})" href="javascript:void(0)">Creating the profile</a></li>
+
+            </ul>
+            <p>Additional Setup</p>
+            <ul>
+                <li>Using Voice Chat</li>
+            </ul>
+        </div>
+
+        <div>
+            <hr class="section-div">
+        </div>
+
+        <div class="main-tutorial">
+            <div id="gdlaunch" class="gdlaunch">
+                <h1>GDLauncher Method</h1>
+                <div id="inst-gdl" class="text-info">
+                    <h2>Installing GDLauncher</h2>
+                    <p>GDLauncher is a very powerful client for Minecraft Java Edition. GDLauncher is able to natively support mods and can automatically install any mods from CurseForge. To install GDLauncher navigate to their website <a href="https://gdevs.io/">here</a>.
+                        Choose the platform you're currently playing on and wait for the file to download. Once downloaded, simply open the file and follow the on-screen instructions.</p>
+                </div>
+                <div id="inst-gdl-bm" class="text-info">
+                    <h2>Installing Better Minecraft</h2>
+                    <p>To install Better Minecraft, click the + button in the bottom left, select CurseForge and search for Better Minecraft. Make sure you choose the Fabric edition. Choose 'Download Latest' and click the arrow on the bottom right. Once
+                        the loading screen appears, click the X at the top right and wait for the mod files to download. <span style="color:red">Please keep an eye on the download! Some mod creators opt-out of third party launchers and you'll need to accept the manual download!</span></p>
+                </div>
+
+            </div>
+
+            <div class="sec-hr">
+                <hr><br>
+            </div>
+
+
+            <div id="manmeth" class="manmeth">
+                <h1>Manual Method</h1>
+                <div id="inst-fabric" class="text-info">
+                    <h2>Installing Fabric</h2>
+                    <p>The first thing you'll need to do is install the Fabric loader. You can find the download at the official Fabric website <a href='https://fabricmc.net/use/installer/'>here</a>. I recommend that you select the universal .jar file, however
+                        you can use the Windows installer if you want. When you open the installer, make sure you're installing the client version, not the server version (see the tabs at the top). Choose the latest version of the loader and choose Minecraft
+                        1.18.2. Make sure that your install location is correct and make sure create profile is checked. Click install and you're good to go!</p>
+                </div>
+                <div id="create-prof" class="text-info">
+                    <h2>Creating the profile</h2>
+                    <p>While this step is optional, I highly recommend you do it to make switching between the modpack and the vanilla version of the game easier. We'll be creating a profile that contains the modpack and you can choose this profile anytime
+                        you want to play T2BM. To do this, open the Minecraft Launcher, make sure you have Java Edition selected, and click the installations tab at the top. Click 'New Installation'. Give the installation a name and under version select
+                        'release-fabric-loader-0.14.8-1.18.2'. Change the directory to something other than your .minecraft folder. I recommend creating a new one on your C drive. </p>
+                </div>
+                <div id="inst-bm-man">
+                    <h2>Installing Better Minecraft</h2>
+                    <p>Now it's time to install Better Minecraft. Click
+                        <a href='/download/T2BM - Better Minecraft v12.zip' download="T2BM - Better Minecraft v12"><u>here</u></a> to download the latest version of the Better Minecraft mod pack. Extract the zip and move all the contents to the directory
+                        you chose during the profile creation.</p>
+                </div>
+            </div>
+
+            <div class="sec-hr">
+                <hr><br>
+            </div>
+
+            <div class="additional">
+                <h1>Additional Setup</h1>
+                <div id="add-vc" class="text-info">
+                    <h2>Using Voice Chat (opt.)</h2>
+                    <p>T2BM natively supports the Simple Voice Chat mod by henkelmax. Simple Voice Chat supports in-game chat groups and proximity chat.</p>
+                    <h4>If you're on GDLauncher</h4>
+                    <p>Right click the instance you created that contains Better Minecraft. Click manage and choose the mods tab. Click add a mod and search for 'Simple Voice Chat'. Find the 1.18.2 Fabric version of the mod and install it. Now you're ready
+                        to use voice chat! The default push-to-talk button is Caps Lock and you can perform additional configuration in-game. </p>
+                    <h4>If you're on the default launcher</h4>
+                    <p>Download the mod here. Drag and drop the .jar file into your mods folder where you installed your game, by default it should be in your .minecraft folder. The default push-to-talk button is Caps Lock and you can perform additional
+                        configuration in-game.</p>
+                    <br>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer></footer>
+
+    <script type="text/javascript" src="./scripts/elements.js"></script>
+</body>
+
+</html>

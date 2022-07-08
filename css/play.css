@@ -1,0 +1,132 @@
+    @import url(/css/global.css);
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .main-cont {
+        display: flex;
+        flex-direction: column;
+        padding: 5em;
+    }
+    
+    h1,
+    h2,
+    h4 {
+        text-underline-offset: .25em;
+        color: var(--std-color);
+    }
+    
+    .main-cont {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .server-add {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2em;
+        background: var(--std-grad);
+        color: white;
+    }
+    
+    .server-add input {
+        border-radius: .5em;
+        border-style: none;
+        padding: .5em;
+        margin: 1em;
+        font-family: inherit;
+        outline: none;
+        user-select: all;
+        cursor: pointer;
+        font-weight: inherit;
+    }
+    
+    #server-add-alert {
+        font-size: .75em;
+    }
+    
+    .main-toc {
+        position: flex;
+        margin: 4em;
+        padding: 1em 3em 1em 3em;
+        box-shadow: var(--std-shadow);
+        border-radius: .5em;
+        color: var(--std-color);
+        text-underline-offset: .15em;
+    }
+    
+    .section-div {
+        width: unset;
+        float: unset;
+        text-align: center;
+    }
+    
+    .sec-hr {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .sec-hr hr {
+        width: 65%;
+    }
+    
+    @media screen and (min-width: 1215px) {
+        .main-cont {
+            display: flex;
+            align-items: unset;
+            text-align: left;
+        }
+        .main-toc {
+            position: absolute;
+            right: 0;
+            margin: 4em;
+            padding: 1em 3em 1em 3em;
+            box-shadow: var(--std-shadow);
+            border-radius: .5em;
+            color: var(--std-color);
+            text-underline-offset: .15em;
+        }
+    }
+    
+    @media screen and (min-width: 768px) {
+        .section-div {
+            width: 65%;
+            float: left;
+        }
+        #server-add-alert {
+            display: inline-flex;
+            display: -webkit-inline-flex;
+            display: -ms-flexbox;
+            font-size: .75em;
+        }
+        .main-header {
+            width: 65%;
+            margin: 3em 0 3em 0
+        }
+        .main-header h1 {
+            font-size: 3em;
+            color: var(--std-color);
+        }
+        .main-toc ul {
+            text-align: left;
+            list-style-type: square;
+            line-height: 2em;
+        }
+        .gdlaunch {
+            margin: 3em 0 3em 0
+        }
+        .text-info {
+            margin: 3em;
+        }
+        .main-tutorial {
+            width: 65%;
+        }
+        .text-info a {
+            color: inherit;
+        }
+    }
